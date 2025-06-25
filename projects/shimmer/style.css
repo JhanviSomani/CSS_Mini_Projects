@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 90%;
+  height: auto;
+  /* border: 1px solid black; */
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+header .card {
+  position: relative;
+  width: 320px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 8px;
+  padding: 20px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+header .card .profile_title_box {
+  display: flex;
+  align-items: center;
+}
+
+header .card .profile_title_box h1 {
+  width: 55px;
+  height: 55px;
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+}
+
+header .card .profile_title_box .title-box {
+  margin-left: 15px;
+}
+
+header .card .profile_title_box .title-box h2,
+p {
+  width: 100px;
+  height: 12px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+header .card .profile_title_box .title-box p {
+  width: 160px;
+  height: 8px;
+  margin-top: 10px;
+}
+
+header .card p {
+  width: 80%;
+  height: 8px;
+  margin-top: 10px;
+}
+
+header .card p:nth-child(2) {
+  margin-top: 20px;
+}
+
+header .card p:nth-child(3) {
+  width: 100%;
+}
+
+header .card p:nth-child(4) {
+  width: 40%;
+}
+
+header .card button{
+    width: 48%;
+    height: 25px;
+    background-color: rgba(0, 0, 0, 0.15);
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+header .card:before{
+    content: "";
+    position: absolute;
+    width: 5%;
+    height: 100%;
+    background-image: linear-gradient(0deg, transparent,rgb(255,255,255,0.15),transparent);
+    z-index: 999;
+    left: 0;
+    transform: skew(0deg);
+    animation: load 1s linear infinite;
+}
+
+@keyframes load {
+    0%{
+        left: 0%;
+    }
+    100%{
+        left: 100%;
+    }
+}

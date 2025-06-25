@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: #fe9b2aaf;
+  margin: 2.5rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2.5rem;
+  height: 100vh;
+}
+.des {
+  font-size: 2rem;
+  max-width: 35rem;
+  font-weight: 700;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #3f2e1b;
+  line-height: 2rem;
+  border-radius: 0.75rem;
+  text-shadow:2px 2px 7px #1a0404;
+}
+
+.heading {
+  text-align: center;
+  font-size: 0.875rem;
+  color: whitesmoke;
+  margin-bottom: 1rem;
+  letter-spacing: 0.09375rem;
+}
+
+p {
+  text-align: center;
+  color: #f4f2f2;
+  margin-top: 0.1rem;
+  line-height: 0.2rem;
+  font-size: medium;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 0.5rem;
+}
+
+.icons .icon {
+  font-size: 1.5625rem;
+  color: #f4f4f4;
+}
+
+.icons .icon:nth-child(1) {
+  color: #1437b5;
+}
+
+.icons .icon:nth-child(2) {
+  color: red;
+}
+
+.icons .icon:nth-child(3) {
+  color: rgb(60, 96, 238);
+}
+
+.signup-form {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5));
+  border-radius: 0.625rem;
+  padding: 2.5rem;
+  max-width: 100%;
+  width: 90%;
+  max-width: 25rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0rem 0.875rem 1.75rem,
+    rgba(0, 0, 0, 0.22) 0rem 0.625rem 0.625rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.875rem 2.5rem;
+  border: 0.0625rem solid #fdfcfc;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  background: none;
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: #2196f3;
+}
+
+.floating1 input:focus + label,
+.floating1 input:valid + label {
+  top: -0.4375rem;
+  left: 2.25rem;
+  font-size: 0.75rem;
+  color: #2196f3;
+  padding: 0 0.25rem;
+  background-image: linear-gradient(#3f2e1b, #3f2e1b);
+}
+
+.floating2 input:focus + label,
+.floating2 input:valid + label {
+  top: -0.4375rem;
+  left: 2.25rem;
+  font-size: 0.75rem;
+  color: #2196f3;
+  padding: 0 0.25rem;
+  background-image: linear-gradient(#47341f, #47341f);
+}
+
+.floating3 input:focus + label,
+.floating3 input:valid + label {
+  top: -0.4375rem;
+  left: 2.25rem;
+  font-size: 0.75rem;
+  color: #2196f3;
+  padding: 0 0.25rem;
+  background-image: linear-gradient(#4f3a22, #4f3a22);
+}
+
+.floating4 input:focus + label,
+.floating4 input:valid + label {
+  top: -0.4375rem;
+  left: 2.25rem;
+  font-size: 0.75rem;
+  color: #2196f3;
+  padding: 0 0.25rem;
+  background-image: linear-gradient(#584026, #584026);
+}
+
+.floating5 input:focus + label,
+.floating5 input:valid + label {
+  top: -0.4375rem;
+  left: 2.25rem;
+  font-size: 0.75rem;
+  color: #2196f3;
+  padding: 0 0.25rem;
+  background-image: linear-gradient(#604629, #604629);
+}
+
+.form-group label {
+  position: absolute;
+  top: 0.875rem;
+  left: 2.5rem;
+  color: #efeded;
+  transition: 0.3s ease;
+  pointer-events: none;
+  background: transparent;
+}
+
+.form-group .icon {
+  position: absolute;
+  top: 50%;
+  left: 0.625rem;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: #ededed;
+}
+
+button {
+  padding: 0.875rem;
+  font-size: 1rem;
+  background: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #1769aa;
+}

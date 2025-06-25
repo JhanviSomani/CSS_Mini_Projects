@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D-Flip-Login-Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="des">
+        <div class="P1">
+          <p>
+            "An interactive design with a smooth 3D flip animation that adds
+            dynamic movement when transitioning between different states."
+          </p>
+        </div>
+        <div class="P2">
+          <p>
+            Just click on 'I'm new here' to navigate to sign up form and click
+            on 'I have an account' to navigate to Login form
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="inner-box" id="card">
+          <div class="card-front">
+            <h2>Login</h2>
+            <form>
+              <input
+                type="email"
+                class="input-box"
+                id=""
+                placeholder="Your Email Id"
+                required
+              />
+              <input
+                type="password"
+                class="input-box"
+                placeholder="Password"
+                required
+              />
+              <button type="submit" class="submit-btn">Submit</button>
+              <input type="checkbox" name="" id="" /><span>Remember Me</span>
+              <button type="button" class="btn" onclick="openSignup()">
+                I'm new here
+              </button>
+              <a href="">Forget Password</a>
+            </form>
+          </div>
+          <div class="card-back">
+            <h2>Sign Up</h2>
+            <form>
+              <input
+                type="text"
+                class="input-box"
+                id=""
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="email"
+                class="input-box"
+                id=""
+                placeholder="Your Email Id"
+                required
+              />
+              <input
+                type="password"
+                class="input-box"
+                placeholder="Password"
+                required
+              />
+              <button type="submit" class="submit-btn">Submit</button>
+              <input type="checkbox" name="" id="" /><span>Remember Me</span>
+              <button type="button" class="btn" onclick="openLogin()">
+                I have an account
+              </button>
+              <a href="">Forget Password</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var card = document.getElementById("card");
+
+      function openSignup() {
+        card.style.transform = "rotateY(-180deg)";
+      }
+
+      function openLogin() {
+        card.style.transform = "rotateY(0deg)";
+      }
+    </script>
+  </body>
+</html>

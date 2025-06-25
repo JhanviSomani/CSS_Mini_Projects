@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.login_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 50px 0 0 0;
+}
+
+.des{
+    font-size: 20px;
+    color: #1c4632;
+}
+
+h1 {
+  text-align: center;
+  color: #1c4632;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.card1 {
+  width: 420px;
+  height: 520px;
+  border-radius: 12px;
+  padding: 35px;
+  font-family: serif;
+  font-weight: 400;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.card1 .heading h1 {
+  color: rgb(32, 32, 32);
+}
+
+.new_account {
+  margin-top: 20px;
+  font-size: medium;
+  font-weight: 400;
+}
+.card1 span {
+  color: #a5a4a4;
+}
+
+.card1 .create {
+  color: #1c4632;
+}
+
+.inputs {
+  margin-top: 35px;
+}
+
+.input-group {
+  position: relative;
+}
+
+.inputs input {
+  width: 100%;
+  padding: 8px;
+  border: 0.0625rem solid #1c4632;
+  margin-bottom: 20px;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  background: none;
+  outline: none;
+}
+
+.input-group label {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  color: #1c4632;
+  transition: 0.3s ease;
+  pointer-events: none;
+  background-color: white;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label {
+  top: -5px;
+  left: 20px;
+  font-size: 0.75rem;
+  color: #1c4632;
+  background-color: rgb(255, 255, 255);
+  padding: 0 0.25rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #8e8d8d;
+}
+
+.links .check-group {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  font-size: 14px;
+}
+
+.links a {
+  color: #1c4632;
+  font-size: medium;
+}
+
+button {
+  width: 100%;
+  padding: 8px;
+  border: 0.0625rem solid #1c4632;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: #1c4632;
+  color: whitesmoke;
+  outline: none;
+}
+
+.break {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+hr {
+  width: 150px;
+}
+
+.break p {
+  font-size: 12px;
+  color: #a5a4a4;
+}
+
+.sign_in_options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.option {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 30px;
+  border: 2px solid rgb(194, 192, 192);
+  border-radius: 8px;
+  position: relative;
+}
+
+.option a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #1c4632;
+  font-weight: 400;
+}
+
+.icon {
+  position: absolute;
+  left: 10px;
+  top: 6px;
+}
+
+#i1 {
+  color: red;
+}
+
+#i2 {
+  color: blue;
+}
+/* .card2 */
+
+.card2 {
+  width: 400px;
+  height: 500px;
+  background-color: #1c4632;
+  border-radius: 12px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all 0.3s;
+}
+
+.card2 p {
+  text-align: center;
+  font-size: xx-large;
+  font-weight: 600;
+  color: whitesmoke;
+  transition: all 0.3s;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.card2 label {
+  text-align: center;
+  font-size: xx-large;
+  font-weight: 600;
+  color: whitesmoke;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#check:checked ~ .card1 {
+  transform: translateX(-200px);
+}
+#check:checked ~ .card2 {
+  transform: translateX(200px);
+}

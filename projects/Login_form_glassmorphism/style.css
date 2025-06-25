@@ -1,0 +1,100 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(https://img.freepik.com/free-photo/view-boat-floating-water-with-nature-scenery_23-2150693374.jpg?semt=ais_hybrid&w=740);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login_form_1 {
+  height: 500px;
+  width: 350px;
+  margin: 130px auto;
+  padding: 35px 30px;
+  border-radius: 18px;
+  background-color: rgba(255, 255, 255, 0.122);
+  backdrop-filter: blur(5px);
+}
+
+.heading {
+  color: whitesmoke;
+  text-align: center;
+}
+
+.input {
+  text-decoration: none;
+  outline: none;
+  height: 40px;
+  width: 100%;
+  border-radius: 7px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  padding: 15px;
+  border: 2px solid white;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.inputs label {
+  color: whitesmoke;
+}
+
+.inputs {
+  margin-top: 20px;
+}
+
+.checkbox label {
+  color: whitesmoke;
+}
+
+button {
+  text-decoration: none;
+  height: 40px;
+  width: 100%;
+  border-radius: 7px;
+  border: 2px solid white;
+  margin-top: 20px;
+  color: rgb(53, 53, 53);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: whitesmoke;
+  margin-top: 5px;
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.links a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.sign_in_options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 25px;
+  color: whitesmoke;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 7px;
+}
+
+.icons .icon {
+  font-size: 25px;
+}
